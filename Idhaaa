@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XVIDHOT18</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(
+                to bottom,
+                #123cff 0%,
+                #3028f5 30%,
+                #8c18e8 60%,
+                #ed00c8 100%
+            );
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 760px;
+
+            margin-top: 275px;
+
+            text-align: center;
+        }
+
+        .welcome-box {
+            width: 100%;
+            min-height: 410px;
+
+            border: 6px solid white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px;
+
+            box-shadow:
+                10px 10px 0 rgba(0,0,0,0.65),
+                20px 20px 0 rgba(0,0,0,0.18);
+        }
+
+        .welcome-text {
+            margin: 0;
+
+            color: white;
+
+            font-size: clamp(40px, 7vw, 78px);
+
+            font-weight: 400;
+
+            line-height: 1.5;
+        }
+
+        .buttons {
+            display: flex;
+
+            gap: 100px;
+
+            margin-top: 25px;
+        }
+
+        button {
+            flex: 1;
+
+            height: 125px;
+
+            border: none;
+
+            border-radius: 18px;
+
+            background: white;
+
+            color: black;
+
+            font-size: clamp(32px, 5vw, 55px);
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            box-shadow:
+                9px 10px 0 rgba(0,0,0,0.65),
+                15px 17px 0 rgba(0,0,0,0.15);
+        }
+
+        button:active {
+            transform: translate(6px, 7px);
+
+            box-shadow:
+                3px 3px 0 rgba(0,0,0,0.65);
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                margin-top: 180px;
+            }
+
+            .welcome-box {
+                min-height: 300px;
+                border-width: 4px;
+            }
+
+            .welcome-text {
+                font-size: 40px;
+            }
+
+            .buttons {
+                gap: 25px;
+            }
+
+            button {
+                height: 90px;
+                font-size: 32px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="welcome-box">
+
+            <h1 class="welcome-text">
+                SELAMAT<br>
+                DATANG DI<br>
+                XVIDHOT18
+            </h1>
+
+        </div>
+
+
+        <div class="buttons">
+
+            <!-- BACK -->
+            <button onclick="backPage()">
+                BACK
+            </button>
+
+
+            <!-- NEXT -->
+            <button onclick="nextPage()">
+                NEXT
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        // LINK WHATSAPP
+        function nextPage() {
+
+            window.location.href =
+                "https://www.erome.com";
+
+        }
+
+
+        // TOMBOL BACK
+        function backPage() {
+
+            window.close();
+
+            setTimeout(function() {
+
+                window.history.back();
+
+            }, 300);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
